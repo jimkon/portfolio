@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimitrios Kontzedakis - CV</title>
+
+
+    <!-- Add any external CSS libraries or fonts if needed -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../cv/styles.css">
+
+</head>
+<body>
+
+<header class="jumbotron jumbotron-fluid text-center">
+    <div class="container">
+        <h1 class="display-4">Dimitris Kontzedakis</h1>
+        <p class="lead">Machine Learning Engineer | Data Scientist</p>
+        <p>London, UK</p>
+        <p>dkontzedakis@gmail.com • +44 7729971360 • <a href="https://www.linkedin.com/in/dimitris-kontzedakis/">LinkedIn</a>
+            • <a href="https://github.com/jimkon">GitHub</a></p>
+        <!-- Add a brief introduction or tagline -->
+    </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">About me</a>
+        <a class="navbar-brand" href="../projects.html">Projects</a>
+        <a class="navbar-brand" href="CV.html">CV</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+</header>
+<button onclick="downloadCV()">Download CV</button>
+
+<!-- Add this script at the end of your body or in the head of your HTML -->
+<script>
+    function downloadCV() {
+        // Replace 'path/to/your/cv.pdf' with the actual path to your CV file
+        var downloadLink = document.createElement("a");
+        downloadLink.href = "path/to/your/cv.pdf";
+        downloadLink.download = "Dimitrios_Kontzedakis_CV.pdf";
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+    }
+</script>
+
+<div class="container">
+    <div class="aboutme">
+        <h1>ABOUT ME</h1>
+        <p>
+            Experienced engineer specializing in machine learning and data science with strong software engineering
+            skills. Proficient in Python, cloud services, and AI development, with a track record of investigating and
+            implementing effective solutions.
+        </p>
+        <h3>Tech Stack</h3>
+        <ul>
+            Python,
+            AWS,
+            CI/CD,
+            Docker,
+            Scrum,
+            End-to-end (E2E),
+            Cross-functional teams,
+            AI/ML (sci-kit, Pytorch, TensorFlow),
+            Tableau,
+            Matillion (ETL),
+            Azure,
+            Google Cloud Platform,
+            Flask,
+            SQL
+        </ul>
+    </div>
+    <div class="experience">
+        <h1>PROFESSIONAL EXPERIENCE</h1>
+        <h2>DELOITTE LLP - London, UK - Machine Learning Engineer / Data Scientist (2021-2023)</h2>
+        <p>Responsibilities: Deployed and maintained Proof of Concept (PoC) AI solutions on AWS and Azure. Led the
+            design and development of production-quality robust software.</p>
+        <ul>
+            <li>Independently deployed a proof-of-concept (PoC) NLP model as an AWS service for instant medical referral
+                triage, achieving sub-second response times.
+            </li>
+            <li>Led the software engineering of the NLP data science module and collaborated with BackEnd, DevOps and QA
+                to launch a SaMD app in Azure and meet regulatory and software requirements.
+            </li>
+            <li>Reduced production and optimization times for multiple factory supply-chain schedules from hours to
+                minutes by leveraging a Genetic Algorithm model deployed as an AWS cloud app. Further reduced execution
+                time and cloud resource costs through the use of profilers and concurrency techniques.
+            </li>
+            <li>Significantly improved code-delivery time and codebase robustness through careful design and
+                refactoring.
+            </li>
+        </ul>
+        <h2>ITV plc - London, UK - Junior Data Scientist (2020-2021)</h2>
+        <p>Responsibilities: Engineered data pipelines, effectively managing vast datasets to transform raw data.
+            Continuously improved and fine-tuned large-scale ML models to produce accurate predictions and actionable
+            insights.</p>
+        <ul>
+            <li>Built and deployed a Slackbot and the data pipeline to provide our stakeholders with valuable metrics on
+                a simple Slack text query.
+            </li>
+            <li>Built an ML classifier to provide our stakeholders with advanced user patterns.</li>
+            <li>Continuously fed CRM with churn and acquisition probability data to make targeting more efficient.</li>
+        </ul>
+    </div>
+    <div class="education">
+        <h1>EDUCATION</h1>
+        <ul>
+            <li>M.Eng - Sch. Electrical and Computer Engineering - Crete, Greece (2015-2018)</li>
+            <li>B.Eng - Sch. Electrical and Computer Engineering - Crete, Greece (2011-2015)</li>
+        </ul>
+    </div>
+    <div class="certifications">
+        <h1>CERTIFICATIONS</h1>
+        <ul>
+            <li>Introduction to Software for Medical Devices and IEC 62304 (2023) - Medical Device HQ - <a
+                    href="https://drive.google.com/file/d/1pYwdK1mwbcvn6OvWtfQRe4jFx7CLM95j/view?usp=share_link">Cert.
+                Link</a></li>
+            <li>AWS Certified Machine Learning - Specialty (MLS) (2022) - Amazon Web Services - <a
+                    href="https://www.credly.com/badges/4cebfaa4-7f07-4d20-b435-a3a1e3b60d1f?source=linked_in_profile">Cert.
+                Link</a></li>
+            <li>AWS Certified Solutions Architect - Associate (SAA) (2022) - Amazon Web Services - <a
+                    href="https://www.credly.com/badges/fd940c11-17c9-4f0f-bd25-4c24dd7e26da?source=linked_in_profile">Cert.
+                Link</a></li>
+            <li>Higher Performance Python (2020) - Ian Ozsvald - <a
+                    href="https://drive.google.com/file/d/1jPOvkWr4_QUzoDgjHsCKPPageCNsZyNT/view?usp=sharing">Cert.
+                Link</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
