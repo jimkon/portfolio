@@ -2,13 +2,20 @@
   {
     "name": "Visual Sudoku solver",
     "description": "descrption for sudoku solver",
-    "link": "",
+    "link": "https://github.com/jimkon/sudoku-solver",
     "tags": ["Computer Vision", "Python"]
   },
   {
     "name": "Mecon App",
     "description": "App for visualising and tagging my transaction data",
-    "link": "",
+    "link": "https://github.com/jimkon/mecon",
     "tags": ["Flask", "Python"]
+  },
+  {
+    "name": "Adaptive Discretisation",
+    "description": "# App\n **for** `visualising` and tagging my transaction data",
+    "link": "https://github.com/jimkon/adaptive-discretization",
+    "tags": ["Algorithms", "Python"]
+
   }
 ]
