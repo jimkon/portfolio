@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Visual Sudoku solver",
+    "description": "descrption for sudoku solver",
+    "link": "",
+    "tags": ["Computer Vision", "Python"]
+  },
+  {
+    "name": "Mecon App",
+    "description": "App for visualising and tagging my transaction data",
+    "link": "",
+    "tags": ["Flask", "Python"]
+  }
+]
