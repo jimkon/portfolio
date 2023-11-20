@@ -1,21 +1,46 @@
 [
   {
-    "name": "Visual Sudoku solver",
-    "description": "descrption for sudoku solver",
+    "name": "Visual Sudoku puzzle solver",
+    "description": "<p>\n    This is a Proof-of-Concept attempt to detect and extract a Sudoku Puzzle from an image by using standard Computer\n    Vision methods. No Supervised Machine Learning methods are used and that's intentional. Goal was to experiment with\n    OpenCV and the standard CV techniques for de-noising and processing an image, recognize patterns and provide \n    visualization.\n</p>\n\n<div style=\"text-align: center;\"><img src=\"res%2Ffull%20solution.gif\"  width=\"600\" height=\"400\" alt=\"full solution\" /></div>\n\n<p>There are 5 stages:</p>\n\n<ul>\n    <li><strong>Clear the image from the noise</strong> so only the sudoku puzzle is left in the image</li>\n    <li><strong>Find the pattern of the grid</strong> and extract the sudoku with the digits</li>\n    <li><strong>Locate and identify the digits</strong></li>\n    <li><strong>Find the solution of the sudoku</strong> (out of scope for this project)</li>\n    <li><strong>Present the solution back</strong> to the original image</li>\n</ul>\n\n",
     "link": "https://github.com/jimkon/sudoku-solver",
-    "tags": ["Computer Vision", "Python"]
+    "tags": ["Computer Vision", "Python"],
+    "show": true
   },
   {
     "name": "Mecon App",
     "description": "App for visualising and tagging my transaction data",
     "link": "https://github.com/jimkon/mecon",
-    "tags": ["Flask", "Python"]
+    "tags": ["Flask", "App", "Python"]
   },
   {
-    "name": "Adaptive Discretisation",
-    "description": "# App\n **for** `visualising` and tagging my transaction data",
+    "name": "Python source metrics",
+    "description": "App for visualising and tagging my transaction data",
+    "link": "https://github.com/jimkon/mecon",
+    "tags": ["Flask", "App", "Python"]
+  },
+  {
+    "name": "Alpha star python package",
+    "description": "no description yet",
+    "link": "https://github.com/jimkon/adaptive-discretization",
+    "tags": ["Algorithms", "Artificial Intelligence", "Python"]
+  },
+  {
+    "name": "Adaptive Discretisation package",
+    "description": "no description yet",
     "link": "https://github.com/jimkon/adaptive-discretization",
     "tags": ["Algorithms", "Python"]
-
+  },
+  {
+    "name": "Implementation of Deep Reinforcement Learning in Large Discrete Action Spaces",
+    "description": "no description yet",
+    "link": "https://github.com/jimkon/Deep-Reinforcement-Learning-in-Large-Discrete-Action-Spaces",
+    "tags": ["Reinforcement Learning", "Neural Networks", "Artificial Intelligence", "Python"]
+  },
+    {
+    "name": "Implementation of Adaptation of Action Space for Reinforcement Learning",
+    "description": "no description yet",
+    "link": "https://github.com/jimkon/Adaptation-of-Action-Space-for-Reinforcement-Learning",
+    "tags": ["Reinforcement Learning", "Neural Networks", "Artificial Intelligence", "Algorithms", "Python"]
   }
+
 ]

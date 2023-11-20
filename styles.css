@@ -18,3 +18,13 @@
 .project-details {
     margin-top: 10px;
 }
+
+/* Style for h2 element within .personal_project */
+.personal_project h2 {
+    margin-left: 20px; /* Adjust the value as needed */
+}
+
+/* Style for p element within .personal_project */
+.personal_project p {
+    text-align: center;
+}
