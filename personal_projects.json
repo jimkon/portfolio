@@ -19,10 +19,11 @@
     "tags": ["All", "Flask", "App", "Python"]
   },
   {
-    "name": "Alpha star python package",
-    "description": "no description yet",
+    "name": "Alpha star search in python",
+    "description": "<p>Python implementation of A* search algorithm for n-dimensional spaces</p>\n\n<img src=\"res%2Falphastar-search%2F6fc8334a-0d7c-4be7-a9e5-a61f74d5b965.png\" alt=\"Image 1\" width=\"1200\" height=\"200\" /><br>\n<img src=\"res%2Falphastar-search%2F9a38eb7a-76ae-453b-be72-aba0bf74f2df.png\" alt=\"Image 2\" width=\"1200\" height=\"200\" /><br>\n<img src=\"res%2Falphastar-search%2F692e89f3-947d-4ced-8801-f3c1e18259c1.png\" alt=\"Image 3\" width=\"1200\" height=\"200\" />\n\n<p>\n    Optimised for performance with cProfile profiler.\n</p>\n",
     "link": "https://github.com/jimkon/adaptive-discretization",
-    "tags": ["All", "Algorithms", "Artificial Intelligence", "Python"]
+    "tags": ["All", "Algorithms", "Artificial Intelligence", "Performance", "Python"],
+    "show": true
   },
   {
     "name": "Adaptive Discretisation package",
