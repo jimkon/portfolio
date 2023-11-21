@@ -40,11 +40,12 @@
 
 <!-- Portfolio Tab -->
 <h1 style="text-align: center;">Personal Projects</h1>
-<h4 style="margin-left: 20px;">Tags</h4><br>
 <div class="tabs" id="tabList" style="margin-left: 20px;">
     <!-- Dynamically generate tabs based on tags -->
 </div>
 
+<br>
+<h4 style="margin-left: 20px;" id="selectedTag">Selected tag: </h4><br>
 <!-- Container for displaying project details -->
 <div class="project-details" id="projectDetails" style="margin-left: 20px;"></div>
 
@@ -73,6 +74,8 @@
             // Function to display projects for a specific tag
             function displayProjects(tag) {
                 // Filter projects based on the selected tag
+                const selectedTag = document.getElementById('selectedTag');
+                selectedTag.textContent = 'Selected tag: '+tag
                 const filteredProjects = projectsData.filter(project => project.tags.includes(tag));
 
                 // Display project details
