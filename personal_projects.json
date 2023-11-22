@@ -47,6 +47,13 @@
     "link": "https://github.com/jimkon/Adaptation-of-Action-Space-for-Reinforcement-Learning",
     "tags": ["All", "Reinforcement Learning", "Neural Networks", "Artificial Intelligence", "Algorithms", "Python"],
     "show": true
+  },
+  {
+    "name": "Reinforcement Learning agents lib",
+    "description": "<img src=\"res%2Frl-lib%2FScreenshot 2023-11-22 154546.png\" alt=\"Image 1\" width=\"600\" height=\"200\" /><img src=\"res%2Frl-lib%2FScreenshot 2023-11-22 154722.png\" alt=\"Image 1\" width=\"600\" height=\"200\" />\n\n<p>\n    A toolkit for Reinforcement Learning algorithms with a basic framework for OpenAI Gym environments and a small collection of RL agent implementations, such as:\n</p>\n\n<h3>Q Learning</h3>\n\n<p>\n    Q-Learning is a famous RL algorithm that aims to learn the Q-value (expected cumulative reward of taking a particular action in a specific state and following the optimal policy thereafter) of each state-action of the environment by approximating the Q-function using the observed rewards. With the knowledge of the Q-value, we can then select the actions that lead to the next best state for any given situation and finally maximise the total reward. The approximation of the Q-function can be done in a few different ways. This package contains the following:\n</p>\n\n<ul>\n    <li>Tabular Q Learning</li>\n    <li>RBF Q Learning (Radial Basis Function network)</li>\n    <li>DNN Q Learning (Deep Neural Network)</li>\n</ul>\n\n<h3>Policy Gradient</h3>\n\n<p>\n    Policy gradient is a class of reinforcement learning algorithms that directly optimize the policy function, enabling an agent to learn a stochastic or deterministic policy that maximizes expected cumulative rewards in a given environment. Unlike value-based methods, policy gradient methods directly parameterize the policy and employ gradient ascent to iteratively improve its parameters, making them particularly effective for high-dimensional action spaces and continuous control tasks.\n</p>\n\n<p>\n    Value and Policy Models are implemented as fully connected Deep Neural Networks.\n</p>\n\n<h3>Linear Policy Agent</h3>\n\n<p>\n    Policy is modeled as a linear combination of features, allowing the agent to approximate actions based on the input state. This package contains the following implementation:\n</p>\n\n<ul>\n    <li>Input Feature Vector</li>\n    <li>Random Feature Vector</li>\n</ul>\n",
+    "link": "https://github.com/jimkon/rl_lib",
+    "tags": ["All", "Reinforcement Learning", "Neural Networks", "Artificial Intelligence", "Python"],
+    "show": true
   }
 
 ]
