@@ -8,15 +8,16 @@
   },
   {
     "name": "Mecon App",
-    "description": "App for visualising and tagging my transaction data",
+    "description": "mecond app description",
     "link": "https://github.com/jimkon/mecon",
     "tags": ["All", "Flask", "App", "Python"]
   },
   {
     "name": "Python source metrics",
-    "description": "App for visualising and tagging my transaction data",
+    "description": "<p>\n    A tool that analyzes a Python project's source files and calculates useful metrics and graphs.\n    The main goal of the metrics is to reflect information about the structure of the code, the dependencies,\n    and also the relations of the objects it contains such as modules and classes. This could help in improving the\n    quality of the code, fix vulnerable design choices, and clean the codebase.\n</p><img src=\"res%2Fpystruct%2Fscreenshots.png\" alt=\"Image 1\" width=\"800\" height=\"500\" />\n\n<p>\n    More specifically, this app can output in a website form the insights about:\n</p>\n\n<ul>\n    <li>\n        the <strong>distribution of the number of lines of code</strong> for packages, modules, classes, and functions.\n        This can help identify god-objects and unclassified code\n    </li>\n    <li>\n        <strong>UML Class</strong> and <strong>Class Relation diagrams</strong> to help users understand the structure\n        and the relation of objects\n    </li>\n    <li>\n        detailed insights about the module-level imports (<strong>import statements</strong>) like most imported external\n        or internal packages and modules, invalid imports, and unused internal modules\n    </li>\n    <li>\n        detailed <strong>information and diagrams around dependencies</strong> to help better understand how code is designed,\n        highly dependent and vulnerable points of the architecture, and general information about how it is structured\n    </li>\n</ul>",
     "link": "https://github.com/jimkon/mecon",
-    "tags": ["All", "Flask", "App", "Python"]
+    "tags": ["All", "Flask", "App", "Python"],
+    "show": true
   },
   {
     "name": "Alpha star search in python",

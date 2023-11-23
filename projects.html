@@ -98,9 +98,11 @@
 
                         projectDiv.innerHTML = `
                         <div>
-                        <h1>- ${project.name}</h1> (<a href=${project.link}>more details</a>)
+                        <h1>- ${project.name}</h1>
                         <p style="text-align: center;">${typeof marked === 'function' ? marked(project.description) : project.description}</p>
-                        </div><br><br>`;
+                        <b>Tags:</b> ${project.tags.join(',  ')}<br>
+                        (visit GitHub page for <a href=${project.link}>GitHub page</a> for more details)
+                        <br><br></div>`;
 
                         projectDetails.appendChild(projectDiv);
 
