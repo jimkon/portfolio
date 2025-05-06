@@ -115,5 +115,20 @@
       "Java"
     ],
     "show": true
+  },
+  {
+    "name": "PacMaze 3D",
+    "description": "<img src=\"res%2Fpacman%2Fgame.gif\" alt=\"Image 1\" width=\"600\" height=\"300\" />\n\n<p>\n  This project is a fully functional WebGL game developed in <strong>JavaScript</strong>, inspired by the classic <em>Pac-Man</em>. It includes custom game mechanics, audio, textures, and camera animations. \n    The implementation features <strong>dynamic ghost AI</strong> that chases or evades the player based on power-up status, and each level has <em>distinct themes</em> and textures. \n    A <strong>pathfinding system</strong> using recursive distance mapping (intMap) guides ghost behavior intelligently rather than randomly.\n    The game supports multiple camera modes and ambient lighting animations triggered by gameplay events. \n    Key gameplay logic, such as movement and collision handling, is integrated into a custom <strong>game loop</strong>, and players can control the main character using keyboard input. \n    Additional polish includes <em>responsive enemy behavior</em>, <strong>camera transitions</strong>, and a level switching system.\n\n  ",
+    "link": "https://github.com/jimkon/pacman",
+    "tags": [
+      "All",
+      "Algorithms",
+      "Graphics",
+      "Game",
+      "AI agent",
+      "WebGL",
+      "JavaScript"
+    ],
+    "show": true
   }
 ]
