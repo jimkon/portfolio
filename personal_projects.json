@@ -3,58 +3,117 @@
     "name": "Visual Sudoku puzzle solver",
     "description": "<p>\n    This is a Proof-of-Concept attempt to detect and extract a Sudoku Puzzle from an image by using standard Computer\n    Vision methods. No Supervised Machine Learning methods are used and that's intentional. Goal was to experiment with\n    OpenCV and the standard CV techniques for de-noising and processing an image, recognize patterns and provide \n    visualization.\n</p>\n\n<img src=\"res%2Fsudoku-solver%2Ffull%20solution.gif\"  width=\"600\" height=\"400\" alt=\"full solution\" />\n\n<p>There are 5 stages:</p>\n\n<ul>\n    <li><strong>Clear the image from the noise</strong> so only the sudoku puzzle is left in the image</li>\n    <li><strong>Find the pattern of the grid</strong> and extract the sudoku with the digits</li>\n    <li><strong>Locate and identify the digits</strong></li>\n    <li><strong>Find the solution of the sudoku</strong> (out of scope for this project)</li>\n    <li><strong>Present the solution back</strong> to the original image</li>\n</ul>\n\n",
     "link": "https://github.com/jimkon/sudoku-solver",
-    "tags": ["All", "Computer Vision", "Python"],
+    "tags": [
+      "All",
+      "Computer Vision",
+      "Python"
+    ],
     "show": true
   },
   {
     "name": "Mecon App",
     "description": "mecond app description",
     "link": "https://github.com/jimkon/mecon",
-    "tags": ["All", "Flask", "App", "Python"]
+    "tags": [
+      "All",
+      "Flask",
+      "App",
+      "Python"
+    ],
+    "show": false
   },
   {
     "name": "Python source metrics",
     "description": "<p>\n    A tool that analyzes a Python project's source files and calculates useful metrics and graphs.\n    The main goal of the metrics is to reflect information about the structure of the code, the dependencies,\n    and also the relations of the objects it contains such as modules and classes. This could help in improving the\n    quality of the code, fix vulnerable design choices, and clean the codebase.\n</p><img src=\"res%2Fpystruct%2Fscreenshots.png\" alt=\"Image 1\" width=\"800\" height=\"500\" />\n\n<p>\n    More specifically, this app can output in a website form the insights about:\n</p>\n\n<ul>\n    <li>\n        the <strong>distribution of the number of lines of code</strong> for packages, modules, classes, and functions.\n        This can help identify god-objects and unclassified code\n    </li>\n    <li>\n        <strong>UML Class</strong> and <strong>Class Relation diagrams</strong> to help users understand the structure\n        and the relation of objects\n    </li>\n    <li>\n        detailed insights about the module-level imports (<strong>import statements</strong>) like most imported external\n        or internal packages and modules, invalid imports, and unused internal modules\n    </li>\n    <li>\n        detailed <strong>information and diagrams around dependencies</strong> to help better understand how code is designed,\n        highly dependent and vulnerable points of the architecture, and general information about how it is structured\n    </li>\n</ul>",
     "link": "https://github.com/jimkon/mecon",
-    "tags": ["All", "Flask", "App", "Python"],
+    "tags": [
+      "All",
+      "Flask",
+      "App",
+      "Python"
+    ],
     "show": true
   },
   {
     "name": "Alpha star search in python",
     "description": "<p>Python implementation of A* search algorithm for n-dimensional spaces</p>\n\n<img src=\"res%2Falphastar-search%2F6fc8334a-0d7c-4be7-a9e5-a61f74d5b965.png\" alt=\"Image 1\" width=\"1200\" height=\"200\" /><br>\n<img src=\"res%2Falphastar-search%2F9a38eb7a-76ae-453b-be72-aba0bf74f2df.png\" alt=\"Image 2\" width=\"1200\" height=\"200\" /><br>\n<img src=\"res%2Falphastar-search%2F692e89f3-947d-4ced-8801-f3c1e18259c1.png\" alt=\"Image 3\" width=\"1200\" height=\"200\" />\n\n<p>\n    Optimised for performance with cProfile profiler.\n</p>\n",
     "link": "https://github.com/jimkon/adaptive-discretization",
-    "tags": ["All", "Algorithms", "Artificial Intelligence", "Performance", "Python"],
+    "tags": [
+      "All",
+      "Algorithms",
+      "Artificial Intelligence",
+      "Performance",
+      "AI agent",
+      "Python"
+    ],
     "show": true
   },
   {
     "name": "Adaptive Discretisation package",
     "description": "<h3>Problem description</h3>\n\n<p>\n    Discretizing a space with a fixed number of points is usually trivial. Most of the time a uniform distribution fits our needs because there is no specific interest in any range inside the given space. That actually means that the uniformly distributed points we assign will match the uniform distribution of the <strong>continuous</strong> points that we need. So when we search the nearest neighbour of a given continuous point, the <strong>mean distance</strong> of the corresponding discrete point will be the minimum.\n</p>\n\n<p>\n    Nevertheless, sometimes there are some places inside the given range with higher interest. These places can be specific ranges or points that we need more often which makes the uniform discretization not optimal. An increased resolution in this range would give us a lower average distance on the searches.\n</p>\n\n<p>\n    This raises some questions though. Where to increase the resolution and how much? And if we increase the resolution in a region, it's necessary to decrease the resolution in another region in order to keep the number of points stable.\n</p>\n\n<img src=\"res%2Fadiscr%2FScreenshot 2023-11-21 012356.png\" alt=\"Image 1\" width=\"1000\" height=\"200\" /><img src=\"res%2Fadiscr%2FScreenshot 2023-11-21 012452.png\" alt=\"Image 1\" width=\"1000\" height=\"300\" />\n\n<h3>My solution (a brief explanation)</h3>\n\n<p>\n    In this library, I propose a solution that makes possible the adaption of the discretized points in an automated way. The goal is to minimize the mean distance for every kind of distribution while maintaining a steady number of discrete points.\n</p>\n\n<p>Trying to achieve:</p>\n\n<ol>\n    <li>Minimum Mean Error (<em>ME</em>) for any distribution.\n        <ul>\n            <li>Provide the best possible precision.</li>\n            <li>Adapting to unknown to the user distributions.</li>\n        </ul>\n    </li>\n    <li>Stable number of discrete points (size <em>K</em>).</li>\n    <li>Work for any dimensional space (number of dimensions <em>n</em>).</li>\n    <li>Sub-linear complexity for search, insert, and delete.</li>\n</ol>\n\n<p><strong>Note:</strong> The nearest neighbour search is not a feature of this solution, but the algorithm can easily be combined with another package for this, like <a href=\"https://github.com/mariusmuja/flann\">FLANN</a>.</p>\n",
     "link": "https://github.com/jimkon/adaptive-discretization",
-    "tags": ["All", "Algorithms", "Python"],
+    "tags": [
+      "All",
+      "Algorithms",
+      "Python"
+    ],
     "show": true
-
   },
   {
     "name": "Implementation of Deep Reinforcement Learning in Large Discrete Action Spaces",
     "description": "<p>\n    This paper introduces the Wolpertinger training algorithm that extends the Deep Deterministic Policy Gradient training\n    algorithm introduced in <a href=\"https://arxiv.org/abs/1509.02971\">this</a> paper.\n</p>\n\n<img src=\"res%2Fwolp_rl%2FScreenshot 2023-11-21 011258.png\" alt=\"Image 1\" width=\"500\" height=\"600\" />\n\n<p>Link to <a href=\"https://arxiv.org/abs/1512.07679\">paper</a></p>\n\n<p>\n    Implementation of the algorithm in Python 3, TensorFlow, and OpenAI Gym.\n</p>\n\n<p>\n    I used and extended <strong>stevenpjg</strong>'s implementation of <strong>DDPG</strong> algorithm found\n    <a href=\"https://github.com/stevenpjg/ddpg-aigym\">here</a> licensed under the MIT license.\n</p>\n\n<p>\n    Master is currently <strong>only for continuous action spaces</strong>.\n</p>\n\n<p>\n    The branch discrete-and-continuous provides the ability to use the discrete environments of the gym.\n</p>\n",
     "link": "https://github.com/jimkon/Deep-Reinforcement-Learning-in-Large-Discrete-Action-Spaces",
-    "tags": ["All", "Reinforcement Learning", "Neural Networks", "Artificial Intelligence", "Python"],
+    "tags": [
+      "All",
+      "Reinforcement Learning",
+      "Neural Networks",
+      "Artificial Intelligence",
+      "AI agent",
+      "Python"
+    ],
     "show": true
-
   },
-    {
+  {
     "name": "Implementation of Adaptation of Action Space for Reinforcement Learning",
     "description": "<h3>Summary</h3><img src=\"res%2Fthesis%2FScreenshot 2023-11-21 013200.png\" alt=\"Image 1\" width=\"600\" height=\"200\" />\n\n<p>\n    Reinforcement Learning is a Machine Learning technique, where a decision-making algorithm, also known as an autonomous agent, interacts with an (unknown) environment by making observations and taking actions, while it is receiving positive or negative rewards at each step based on its performance. During this process, the agent tries to learn an optimal decision-making policy, namely which action selections at each state will help to maximize the expected total reward in the long term. This technique is ideal for optimal control problems, games, and many other domains.\n</p>\n\n<p>\n    Many RL architectures use a discrete set of actions to represent a continuous Cartesian action space, and the agent is called to select one of these discrete actions at each time step. Usually, this discretization of a continuous action space reduces the ability of the agent to take actions that perform best, since the agent is forced to choose among the discrete actions.\n</p>\n\n<p>\n    There are two alternative solutions to this problem: either increase the density of discrete points, which affects the responsiveness of the agent, or adopt a discretization of variable resolution which adapts to the needs of the problem. In this thesis, we present a method for creating discretizations able to adapt dynamically according to the use of the action space. The proposed adaptive discretization can match automatically a wide variety of different patterns in a few adaptation steps while maintaining a constant number of discrete points. We embed this adaptive discretization method into the action space of a particular Deep RL agent performing in specific environments that require precision. Our adaptive discretizations take advantage of the selective use the agent makes over the action space and adjust the density of the discrete points in the space, giving an increased number of discrete actions and thus higher resolution to regions where it is needed. As a result, the agent’s precision and learning performance is increased, without a significant increase in computational resources.\n</p>\n\n<h3>References</h3>\n\n<p>My <a href=\"http://purl.tuc.gr/dl/dias/33218A13-C811-425E-BC8B-8D5226842B6F\">Diploma Thesis PDF</a></p>\n\n<p>Based on <a href=\"https://arxiv.org/abs/1512.07679\">this paper</a></p>\n",
     "link": "https://github.com/jimkon/Adaptation-of-Action-Space-for-Reinforcement-Learning",
-    "tags": ["All", "Reinforcement Learning", "Neural Networks", "Artificial Intelligence", "Algorithms", "Python"],
+    "tags": [
+      "All",
+      "Reinforcement Learning",
+      "Neural Networks",
+      "Artificial Intelligence",
+      "Algorithms",
+      "AI agent",
+      "Python"
+    ],
     "show": true
   },
   {
     "name": "Reinforcement Learning agents lib",
     "description": "<img src=\"res%2Frl-lib%2FScreenshot 2023-11-22 154546.png\" alt=\"Image 1\" width=\"600\" height=\"300\" /><img src=\"res%2Frl-lib%2FScreenshot 2023-11-22 154722.png\" alt=\"Image 1\" width=\"600\" height=\"200\" />\n\n<p>\n    A toolkit for Reinforcement Learning algorithms with a basic framework for OpenAI Gym environments and a small collection of RL agent implementations, such as:\n</p>\n\n<h3>Q Learning</h3>\n\n<p>\n    Q-Learning is a famous RL algorithm that aims to learn the Q-value (expected cumulative reward of taking a particular action in a specific state and following the optimal policy thereafter) of each state-action of the environment by approximating the Q-function using the observed rewards. With the knowledge of the Q-value, we can then select the actions that lead to the next best state for any given situation and finally maximise the total reward. The approximation of the Q-function can be done in a few different ways. This package contains the following:\n</p>\n\n<ul>\n    <li>Tabular Q Learning</li>\n    <li>RBF Q Learning (Radial Basis Function network)</li>\n    <li>DNN Q Learning (Deep Neural Network)</li>\n</ul>\n\n<h3>Policy Gradient</h3>\n\n<p>\n    Policy gradient is a class of reinforcement learning algorithms that directly optimize the policy function, enabling an agent to learn a stochastic or deterministic policy that maximizes expected cumulative rewards in a given environment. Unlike value-based methods, policy gradient methods directly parameterize the policy and employ gradient ascent to iteratively improve its parameters, making them particularly effective for high-dimensional action spaces and continuous control tasks.\n</p>\n\n<p>\n    Value and Policy Models are implemented as fully connected Deep Neural Networks.\n</p>\n\n<h3>Linear Policy Agent</h3>\n\n<p>\n    Policy is modeled as a linear combination of features, allowing the agent to approximate actions based on the input state. This package contains the following implementation:\n</p>\n\n<ul>\n    <li>Input Feature Vector</li>\n    <li>Random Feature Vector</li>\n</ul>\n",
     "link": "https://github.com/jimkon/rl_lib",
-    "tags": ["All", "Reinforcement Learning", "Neural Networks", "Artificial Intelligence", "Python"],
+    "tags": [
+      "All",
+      "Reinforcement Learning",
+      "Neural Networks",
+      "Artificial Intelligence",
+      "AI agent",
+      "Python"
+    ],
+    "show": true
+  },
+  {
+    "name": "Robo-Lander",
+    "description": "<img src=\"res%2Frobo-lander%2Fimage.png\" alt=\"Image 1\" width=\"600\" height=\"300\" />\n\n<p>\n  The project is inspired by the <em>Mars Lander</em> puzzle from <em>Codingame</em>, aiming to develop a system that autonomously pilots a spacecraft to land safely. \n    It consists of two parts: a <strong>simulator</strong> that models <em>continuous-time, discrete-space physics</em> with a visual interface, and a <strong>pilot agent</strong> that plans and executes landing maneuvers. \n    The agent computes an <strong>optimal path</strong> while respecting physical constraints like <em>thrust</em> and <em>rotation limits</em>. \n    A custom <strong>movement control system</strong> ensures precise directional control, accounting for <em>real-time simulation updates</em>. \n    The project includes tools for <strong>map creation</strong> and a <strong>graphical interface</strong> to visualize the simulation process.\n\n  ",
+    "link": "https://github.com/jimkon/robo-lander",
+    "tags": [
+      "All",
+      "Artificial Intelligence",
+      "Algorithms",
+      "Game",
+      "AI agent",
+      "Java"
+    ],
     "show": true
   }
-
 ]
